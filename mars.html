@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./dist/style.css">
+  
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2 class="logo-text">The Planets</h2>
+    </div>
+
+    <nav>
+      <a href="index.html">Mercury</a>
+      <a href="venus.html">Venus</a>
+      <a href="earth.html">Earth</a>
+      <a href="#">Mars</a>
+      <a href="jupiter.html">Jupiter</a>
+      <a href="saturn.html">Saturn</a>
+      <a href="uranus.html">Uranus</a>
+      <a href="neptune.html">Neptune</a>
+    </nav>
+    
+    <div class="menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <div class="overlay-menu">
+    <div class="nav">
+      <div>
+        <div class="circle"></div>
+        <a href="index.html">Mercury</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle venus"></div>
+        <a href="venus.html">Venus</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle earth"></div>
+        <a href="earth.html">Earth</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle mars"></div>
+        <a href="mars.html">Mars</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle jupiter"></div>
+        <a href="jupiter.html">Jupiter</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle saturn"></div>
+        <a href="saturn.html">Saturn</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle uranus"></div>
+        <a href="uranus.html">Uranus</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav none">
+      <div>
+        <div class="circle neptune"></div>
+        <a href="neptune.html">Neptune</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>   
+  </div>
+
+  <section class="planet-overview">
+    <div class="overview-tabs mobile-nav">
+      <div>
+        <a class="mobile-tab overview active"><span>01</span>Overview</a>
+        <div class="border mars overview active"></div>
+      </div>
+      <div>
+        <a class="mobile-tab internal"><span>02</span>Structure</a>
+        <div class="border mars internal"></div>
+      </div>
+      <div>
+        <a class="mobile-tab surface"><span>03</span>Surface</a>
+        <div class="border mars surface"></div>
+      </div>    
+    </div>
+
+    <div class="illustration">
+      <img src="./assets/planet-mars.svg" alt="mars illustration" class="image overview current-image">
+      <img src="./assets/planet-mars-internal.svg" alt="mars illustration internal" class="image internal">
+      <img src="./assets/geology-mars.png" alt="mars geology" class="image surface overlay">
+    </div>
+
+    <div class="overview-section">
+      <div class="tab-content overview current-tab">
+        <h1>Mars</h1>
+
+        <p>
+          Mars is the fourth planet from the Sun and the second-smallest planet 
+          in the Solar System, being larger than only Mercury. In English, Mars 
+          carries the name of the Roman god of war and is often referred to as 
+          the "Red Planet".
+        </p>
+        <p class="link">Source :<a href="https://en.wikipedia.org/wiki/Mars" target="_blank"> Wikipedia</a></p>
+    </div>
+
+    <div class="tab-content internal">
+      <h1>Mars</h1>
+
+      <p>
+        Like Earth, Mars has differentiated into a dense metallic core overlaid 
+        by less dense materials. Scientists initially determined that the core 
+        is at least partially liquid. Current models of its interior imply a 
+        core consisting primarily of iron and nickel with about 16–17% sulfur.
+      </p>
+      <p class="link">Source :<a href="https://en.wikipedia.org/wiki/Mars#Internal_structure" target="_blank"> Wikipedia</a></p>
+    </div>
+
+    <div class="tab-content surface">
+      <h1>Mars</h1>
+
+      <p>
+        Mars is a terrestrial planet whose surface consists of minerals containing 
+        silicon and oxygen, metals, and other elements that typically make up rock. 
+        The surface is primarily composed of tholeiitic basalt, although parts are 
+        more silica-rich than typical basalt.
+      </p>
+      <p class="link">Source :<a href="https://en.wikipedia.org/wiki/Mars#Surface_geology" target="_blank"> Wikipedia</a></p>
+    </div>
+
+    <div class="overview-tabs desktop-nav">
+      <a class="tab mars overview active"><span>01</span>Overview</a>
+      <a class="tab mars internal"><span>02</span>Internal Structure</a>
+      <a class="tab mars surface"><span>03</span>Surface Geology</a>
+    </div>
+
+    </div>
+
+    
+  </section>
+
+  <section class="planet-info">
+    <div class="info">
+      <h4>Rotation Time</h4>
+      <h2>1.03 Days</h2>
+    </div>
+
+    <div class="info">
+      <h4>Revolution Time</h4>
+      <h2>1.88 Years</h2>
+    </div>
+
+    <div class="info">
+      <h4>Radius</h4>
+      <h2>3,389.5 KM</h2>
+    </div>
+
+    <div class="info">
+      <h4>Average Temp.</h4>
+      <h2>-28°c</h2>
+    </div>
+  </section>
+
+  <script src="./app/js/app.js"></script>
+
+  
+</body>
+</html>

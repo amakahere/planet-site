@@ -1,0 +1,38 @@
+html {
+	font-size: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	background-color: $black;
+	color: $white;
+	font-family: "Spartan", sans-serif;
+	font-weight: 400;
+	line-height: 2;
+
+	background-image: url(/assets/background-stars.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

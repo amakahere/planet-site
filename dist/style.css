@@ -1,0 +1,719 @@
+h1 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -1.5px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 2.6px;
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 2.3;
+  letter-spacing: 1px;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 0.6875rem;
+}
+
+@media (min-width: 40em) {
+  .tab {
+    display: inline-block;
+    width: 100%;
+    padding: 1em 1.75em;
+    border: solid 1px #838391;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: #fff;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+  }
+  .tab:hover {
+    background-color: #838391;
+    color: #fff;
+  }
+  .tab.active {
+    background-color: #419ebb;
+    border: solid 1px #419ebb;
+  }
+  .mercury.active {
+    background-color: #419ebb;
+    border: solid 1px #419ebb;
+  }
+  .venus.active {
+    background-color: #eda249;
+    border: solid 1px #eda249;
+  }
+  .earth.active {
+    background-color: #6f2ed6;
+    border: solid 1px #6f2ed6;
+  }
+  .mars.active {
+    background-color: #d14c32;
+    border: solid 1px #d14c32;
+  }
+  .jupiter.active {
+    background-color: #d83a34;
+    border: solid 1px #d83a34;
+  }
+  .saturn.active {
+    background-color: #cd5120;
+    border: solid 1px #cd5120;
+  }
+  .uranus.active {
+    background-color: #1ec2a4;
+    border: solid 1px #1ec2a4;
+  }
+  .neptune.active {
+    background-color: #2d68f0;
+    border: solid 1px #2d68f0;
+  }
+}
+
+html {
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #070724;
+  color: #fff;
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  background-image: url(/assets/background-stars.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: none;
+  position: relative;
+}
+
+@media (min-width: 40em) {
+  nav {
+    display: inline-block;
+  }
+}
+
+.menu {
+  display: inline-block;
+}
+
+@media (min-width: 40em) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu div {
+  height: 3px;
+  width: 24px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 1.5em;
+  border-bottom: 1px solid #38384f;
+}
+
+@media (min-width: 40em) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 64em) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1em 2.5em;
+  }
+}
+
+@media (min-width: 40em) {
+  nav {
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav a {
+    color: #838391;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    text-decoration: none;
+    -webkit-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+  }
+  nav a:hover {
+    color: #fff;
+  }
+  .logo {
+    margin: 1.5625em 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .logo {
+    width: 100%;
+  }
+}
+
+.logo-text {
+  font-size: 1.75rem;
+}
+
+.overlay-menu {
+  height: 100vh;
+  width: 100vw;
+  background-color: #070724;
+  z-index: 3;
+  position: absolute;
+  top: 70.4px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  padding: 2.75em 1.5em;
+}
+
+.overlay-menu.open-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay-menu .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.375em 0;
+  border-bottom: solid 1px #838391;
+}
+
+.overlay-menu .nav.none {
+  border-bottom: solid 1px #070724;
+}
+
+.overlay-menu .nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #419ebb;
+  margin-right: 25px;
+}
+
+.circle.venus {
+  background-color: #eda249;
+}
+
+.circle.earth {
+  background-color: #6f2ed6;
+}
+
+.circle.mars {
+  background-color: #d14c32;
+}
+
+.circle.jupiter {
+  background-color: #d83a34;
+}
+
+.circle.saturn {
+  background-color: #cd5120;
+}
+
+.circle.uranus {
+  background-color: #1ec2a4;
+}
+
+.circle.neptune {
+  background-color: #2d68f0;
+}
+
+.overlay-menu img {
+  height: 8px;
+  width: 4px;
+}
+
+.overlay-menu .nav a {
+  font-size: 0.9375em;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 1.36;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.current-tab {
+  display: inline-block;
+}
+
+.image {
+  display: none;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.image.current-image {
+  display: inline-block;
+  opacity: 1;
+}
+
+.planet-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 64em) {
+  .planet-overview {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5em 7.5em;
+    margin: 0 auto;
+  }
+}
+
+.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.625em 1.5em;
+  width: 100%;
+  border-bottom: solid 1px #38384f;
+}
+
+@media (max-width: 39.9375em) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 40em) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav .mobile-tab {
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  font-size: 0.5625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.9px;
+}
+
+.mobile-nav .mobile-tab span {
+  display: none;
+}
+
+.border {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #2d68f0;
+}
+
+.border {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+}
+
+.border.active {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #419ebb;
+}
+
+.border.mercury.active {
+  background-color: #419ebb;
+}
+
+.border.venus.active {
+  background-color: #eda249;
+}
+
+.border.earth.active {
+  background-color: #6f2ed6;
+}
+
+.border.mars.active {
+  background-color: #d14c32;
+}
+
+.border.jupiter.active {
+  background-color: #d83a34;
+}
+
+.border.saturn.active {
+  background-color: #cd5120;
+}
+
+.border.uranus.active {
+  background-color: #1ec2a4;
+}
+
+.border.neptune.active {
+  background-color: #2d68f0;
+}
+
+.tab-content {
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .tab-content {
+    text-align: left;
+    padding: 0;
+    margin-right: 4.375em;
+    width: 100%;
+  }
+}
+
+.tab-content h1,
+.tab-content p {
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: #838391;
+}
+
+.link a {
+  color: #838391;
+  font-weight: 700;
+}
+
+.planet-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.8125em 1.5em 2.5em;
+}
+
+@media (min-width: 40em) {
+  .planet-info {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 2.5em 2.5em;
+  }
+}
+
+@media (min-width: 64em) {
+  .planet-info {
+    padding: 0 7.5em 2.5em;
+  }
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8125em 1.5em;
+  border: 1px #838391 solid;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 40em) {
+  .info {
+    width: 100%;
+    padding: 1.25em 0.9375em;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
+  .info {
+    padding: 1.75em 1.5em;
+  }
+}
+
+.info h4 {
+  color: #838391;
+}
+
+@media (min-width: 40em) {
+  .info h4 {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 64em) {
+  .info h4 {
+    font-size: 0.6875rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .overview-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5625em 2.5em;
+  }
+  a.tab {
+    font-size: 0.5625rem;
+    font-weight: 700;
+    letter-spacing: 1.93px;
+    text-transform: uppercase;
+  }
+  .tab span {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 1rem;
+  }
+  .tab-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 40em) and (min-width: 64em) {
+  .tab-content h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .tab-content p {
+    font-size: 0.6875rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 40em) and (min-width: 64em) {
+  .tab-content p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 40em) {
+  .planet-info .info {
+    margin-right: 0.75em;
+  }
+  .planet-info .info:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .overview-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 35%;
+  }
+  a.tab {
+    font-size: 0.75rem;
+  }
+  .tab-content h1 {
+    font-size: 5rem;
+  }
+  .tab-content p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  .info h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .overview-section {
+    width: 32%;
+  }
+}
+
+.illustration {
+  padding: 5.9375em 7.5em;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 64em) {
+  .illustration {
+    padding: 5.9375em 7.5em;
+  }
+}
+
+.overlay {
+  margin: auto;
+  width: 20%;
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 40em) {
+  .overlay {
+    top: 350px;
+    width: 25%;
+  }
+}
+
+@media (min-width: 64em) {
+  .overlay {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

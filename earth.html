@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./dist/style.css">
+  
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2 class="logo-text">The Planets</h2>
+    </div>
+
+    <nav>
+      <a href="index.html">Mercury</a>
+      <a href="venus.html">Venus</a>
+      <a href="#">Earth</a>
+      <a href="mars.html">Mars</a>
+      <a href="jupiter.html">Jupiter</a>
+      <a href="saturn.html">Saturn</a>
+      <a href="uranus.html">Uranus</a>
+      <a href="neptune.html">Neptune</a>
+    </nav>
+    
+    <div class="menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <div class="overlay-menu">
+    <div class="nav">
+      <div>
+        <div class="circle"></div>
+        <a href="./">Mercury</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle venus"></div>
+        <a href="./venus.html">Venus</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle earth"></div>
+        <a href="./earth.html">Earth</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle mars"></div>
+        <a href="./mars.html">Mars</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle jupiter"></div>
+        <a href="./jupiter.html">Jupiter</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle saturn"></div>
+        <a href="./saturn.html">Saturn</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav">
+      <div>
+        <div class="circle uranus"></div>
+        <a href="./uranus.html">Uranus</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>
+    <div class="nav none">
+      <div>
+        <div class="circle neptune"></div>
+        <a href="./neptune.html">Neptune</a>
+      </div>
+      <img src="./assets/icon-chevron.svg" alt="">
+    </div>   
+  </div>
+
+  <section class="planet-overview">
+    <div class="overview-tabs mobile-nav">
+      <div>
+        <a class="mobile-tab overview active"><span>01</span>Overview</a>
+        <div class="border earth overview active"></div>
+      </div>
+      <div>
+        <a class="mobile-tab internal"><span>02</span>Structure</a>
+        <div class="border earth internal"></div>
+      </div>
+      <div>
+        <a class="mobile-tab surface"><span>03</span>Surface</a>
+        <div class="border earth surface"></div>
+      </div>    
+    </div>
+
+    <div class="illustration">
+      <img src="./assets/planet-earth.svg" alt="earth illustration" class="image overview current-image">
+      <img src="./assets/planet-earth-internal.svg" alt="earth illustration internal" class="image internal">
+      <img src="./assets/geology-earth.png" alt="earth geology" class="image surface overlay">
+    </div>
+
+    <div class="overview-section">
+      <div class="tab-content overview current-tab">
+        <h1>Earth</h1>
+
+        <p>
+          Third planet from the Sun and the only known planet to harbor life. 
+          About 29.2% of Earth's surface is land with remaining 70.8% is 
+          covered with water. Earth's distance from the Sun, physical properties 
+          and geological history have allowed life to evolve and thrive.
+        </p>
+        <p class="link">Source :<a href="https://en.wikipedia.org/wiki/Earth" target="_blank"> Wikipedia</a></p>
+    </div>
+
+    <div class="tab-content internal">
+      <h1>Earth</h1>
+
+      <p>
+        Earth's interior, like that of the other terrestrial planets, is divided 
+        into layers by their chemical or physical (rheological) properties. The 
+        outer layer is a chemically distinct silicate solid crust, which is 
+        underlain by a highly viscous solid mantle.
+      </p>
+      <p class="link">Source :<a href="https://en.wikipedia.org/wiki/Earth#Internal_structure" target="_blank"> Wikipedia</a></p> 
+    </div>
+
+    <div class="tab-content surface">
+      <h1>Earth</h1>
+
+      <p>
+        The total surface area of Earth is about 510 million km2. The continental 
+        crust consists of lower density material such as the igneous rocks granite 
+        and andesite. Less common is basalt, a denser volcanic rock that is the 
+        primary constituent of the ocean floors.
+      </p>
+      <p class="link">Source :<a href="https://en.wikipedia.org/wiki/Earth#Surface" target="_blank"> Wikipedia</a></p>
+    </div>
+
+      <div class="overview-tabs desktop-nav">
+        <a class="tab earth overview active"><span>01</span>Overview</a>
+        <a class="tab earth internal"><span>02</span>Internal Structure</a>
+        <a class="tab earth surface"><span>03</span>Surface Geology</a>
+      </div>
+
+    </div>
+
+    
+  </section>
+
+  <section class="planet-info">
+    <div class="info">
+      <h4>Rotation Time</h4>
+      <h2>243 Days</h2>
+    </div>
+
+    <div class="info">
+      <h4>Revolution Time</h4>
+      <h2>224.7 Days</h2>
+    </div>
+
+    <div class="info">
+      <h4>Radius</h4>
+      <h2>6,051.8 KM</h2>
+    </div>
+
+    <div class="info">
+      <h4>Average Temp.</h4>
+      <h2>471°c</h2>
+    </div>
+  </section>
+
+  <script src="./app/js/app.js"></script>
+
+</body>
+</html>

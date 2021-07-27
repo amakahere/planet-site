@@ -1,0 +1,285 @@
+.tab-content {
+  display: none;
+}
+
+.tab-content.current-tab {
+  display: inline-block;
+}
+
+.image {
+  display: none;
+  opacity: 0;
+  position: relative;
+  transition: all 200ms ease-in-out;
+}
+
+.image.current-image {
+  display: inline-block;
+  opacity: 1;
+}
+
+//planet overview
+.planet-overview {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up("large") {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: em(80) em(120);
+    margin: 0 auto;
+  }
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: em(10) em(24);
+  width: 100%;
+  border-bottom: solid 1px $grey-70;
+}
+
+@media (max-width: 39.9375em) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+@include breakpoint-up("medium") {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav .mobile-tab {
+  border: 0;
+  background-color: transparent;
+  color: $white;
+  transition: all 200ms ease-in-out;
+  font-size: rem(9);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.9px;
+
+  span {
+    display: none;
+  }
+}
+
+.border {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $blue;
+}
+
+.border {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+}
+
+.border.active {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $lt-blue;
+}
+
+//colors
+.border.mercury.active {
+  background-color: $lt-blue;
+}
+
+.border.venus.active {
+  background-color: $yellow;
+}
+
+.border.earth.active {
+  background-color: $purple;
+}
+
+.border.mars.active {
+  background-color: $lt-red;
+}
+
+.border.jupiter.active {
+  background-color: $red;
+}
+
+.border.saturn.active {
+  background-color: $orange;
+}
+
+.border.uranus.active {
+  background-color: $green;
+}
+
+.border.neptune.active {
+  background-color: $blue;
+}
+
+.tab-content {
+  padding: 0 em(24);
+  text-align: center;
+
+  @include breakpoint-up("medium") {
+    text-align: left;
+    padding: 0;
+    margin-right: em(70);
+    width: 100%;
+  }
+}
+
+.tab-content h1,
+.tab-content p {
+  margin-bottom: rem(16);
+}
+
+.link {
+  color: $grey-50;
+}
+
+.link a {
+  color: $grey-50;
+  font-weight: 700;
+}
+
+.planet-info {
+  display: flex;
+  flex-direction: column;
+  padding: em(13) em(24) em(40);
+
+  @include breakpoint-up("medium") {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 em(40) em(40);
+  }
+
+  @include breakpoint-up("large") {
+    padding: 0 em(120) em(40);
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: em(13) em(24);
+  border: 1px $grey-50 solid;
+  margin-bottom: rem(8);
+
+  @include breakpoint-up("medium") {
+    width: 100%;
+    padding: em(20) em(15);
+    display: block;
+    text-align: left;
+  }
+
+  @include breakpoint-up("large") {
+    padding: em(28) em(24);
+  }
+}
+
+.info h4 {
+  color: $grey-50;
+
+  @include breakpoint-up("medium") {
+    margin-bottom: em(8);
+  }
+
+  @include breakpoint-up("large") {
+    font-size: rem(11);
+  }
+}
+
+@include breakpoint-up("medium") {
+  .overview-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: em(25) em(40);
+  }
+
+  a.tab {
+    font-size: rem(9);
+    font-weight: 700;
+    letter-spacing: 1.93px;
+    text-transform: uppercase;
+  }
+
+  .tab span {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: rem(16);
+  }
+
+  .tab-content h1 {
+    font-size: rem(48);
+    margin-bottom: rem(24);
+
+    @include breakpoint-up("large") {
+      font-size: rem(80);
+    }
+  }
+
+  .tab-content p {
+    font-size: rem(11);
+    margin-bottom: rem(24);
+
+    @include breakpoint-up("large") {
+      font-size: rem(14);
+      font-weight: 400;
+    }
+  }
+
+  .planet-info .info {
+    margin-right: em(12);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include breakpoint-up("large") {
+  .overview-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 35%;
+  }
+
+  a.tab {
+    font-size: rem(12);
+  }
+
+  .tab-content h1 {
+    font-size: rem(80);
+  }
+
+  .tab-content p {
+    font-size: rem(14);
+    font-weight: 400;
+  }
+
+  .info h2 {
+    font-size: rem(40);
+  }
+}
+
+@include breakpoint-up("xlarge") {
+  .overview-section {
+    width: 32%;
+  }
+}

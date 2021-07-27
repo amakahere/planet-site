@@ -1,0 +1,163 @@
+nav {
+	display: none;
+	position: relative;
+
+	@include breakpoint-up("medium") {
+		display: inline-block;
+	}
+}
+
+.menu {
+	display: inline-block;
+
+	@include breakpoint-up("medium") {
+		display: none;
+	}
+}
+
+.menu div {
+	height: 3px;
+	width: 24px;
+	background-color: $white;
+	margin-bottom: 4px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: em(16) em(24);
+	border-bottom: 1px solid $grey-70;
+
+	@include breakpoint-up("medium") {
+		flex-direction: column;
+	}
+
+	@include breakpoint-up("large") {
+		flex-direction: row;
+		padding: em(16) em(40);
+	}
+}
+
+@include breakpoint-up("medium") {
+	nav {
+		width: 100%;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav a {
+		color: $grey-50;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: rem(11);
+		text-decoration: none;
+		transition: all 100ms ease-in-out;
+	}
+
+	nav a:hover {
+		color: $white;
+	}
+
+	.logo {
+		margin: em(25) 0;
+	}
+}
+
+@include breakpoint-up("large") {
+	.logo {
+		width: 100%;
+	}
+}
+
+.logo-text {
+	font-size: rem(28);
+}
+
+.overlay-menu {
+	height: 100vh;
+	width: 100vw;
+	background-color: $black;
+	z-index: 3;
+
+	position: absolute;
+	top: 70.4px;
+	display: none;
+	flex-direction: column;
+	justify-items: center;
+
+	padding: em(44) em(24);
+}
+
+.overlay-menu.open-menu {
+	display: flex;
+}
+
+.overlay-menu .nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: em(22) 0;
+	border-bottom: solid 1px $grey-50;
+}
+
+.overlay-menu .nav.none {
+	border-bottom: solid 1px $black;
+}
+
+.overlay-menu .nav div {
+	display: flex;
+	align-items: center;
+}
+
+.circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: $lt-blue;
+	margin-right: 25px;
+}
+
+.circle.venus {
+	background-color: $yellow;
+}
+
+.circle.earth {
+	background-color: $purple;
+}
+
+.circle.mars {
+	background-color: $lt-red;
+}
+
+.circle.jupiter {
+	background-color: $red;
+}
+
+.circle.saturn {
+	background-color: $orange;
+}
+
+.circle.uranus {
+	background-color: $green;
+}
+
+.circle.neptune {
+	background-color: $blue;
+}
+
+.overlay-menu img {
+	height: 8px;
+	width: 4px;
+}
+
+.overlay-menu .nav a {
+	font-size: em(15);
+	font-weight: 700;
+	line-height: 1.6;
+	letter-spacing: 1.36;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $white;
+}
